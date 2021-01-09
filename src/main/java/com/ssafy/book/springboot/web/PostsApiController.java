@@ -1,6 +1,7 @@
 package com.ssafy.book.springboot.web;
 
 import com.ssafy.book.springboot.service.posts.PostsService;
+import com.ssafy.book.springboot.web.dto.PostsResponseDto;
 import com.ssafy.book.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

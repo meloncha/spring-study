@@ -1,5 +1,6 @@
 package com.ssafy.book.springboot.domain.posts;
 
+import com.ssafy.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity // 테이블과 링크될 클래스, 클래스의 카멜케이스 이름을 언더스코어 네이밍(_)으로 테이블 이름을 매칭
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id /// 해당 테이블의 PK 필드를 나타낸다
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성 규칙, auto increment
